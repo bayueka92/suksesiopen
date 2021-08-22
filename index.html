@@ -34,45 +34,27 @@
 </head>
 <body>
 	
-	
-	<div class="bg-img1 size1 flex-w flex-c-m p-t-55 p-b-55 p-l-15 p-r-15" style="background-image: url('images/bg02.png');">
-		<div class="wsize1 bor1 bg1 p-t-175 p-b-45 p-l-15 p-r-15 respon1">
-			
-			<div class="wrappic1">
-				<img src="images/icons/kpu.png" alt="LOGO">
-			</div>
-
-			<p class="txt-center m1-txt1 p-t-33 p-b-68">
-				Web Suksesi Hima Telkom<br> Dibuka Dalam
-			</p>
-
-			<div class="wsize2 flex-w flex-c hsize1 cd100">
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt1 p-b-9 days">35</span>
-					<span class="s1-txt1">Hari</span>
+	<header>
+		<div class="bg-img1 size1 flex-w flex-c-m p-t-55 p-b-55 p-l-15 p-r-15 content" style="background-image: url('images/bg02.png');">
+			<div class="wsize1 bor1 bg1 p-t-175 p-b-45 p-l-15 p-r-15 respon1">
+				
+				<div class="wrappic1">
+					<img src="images/icons/kpu.png" alt="LOGO">
 				</div>
 
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt1 p-b-9 hours">17</span>
-					<span class="s1-txt1">Jam</span>
+				<p class="txt-center m1-txt1 p-t-33 p-b-68">
+					Web Suksesi Hima Telkom<br> Dibuka Dalam
+				</p>
+				<div class="content">
+					<h1 style="text-align: center;" class="countdown"><font color="black">00 : 00 : 00 : 00</font></h1><br>
 				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt1 p-b-9 minutes">50</span>
-					<span class="s1-txt1">Menit</span>
+				<center><a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn btn-outline-primary rounded-pill">Tutorial</a></center>
+				<div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" width="500" height="600" src="https://www.youtube.com/embed/e9MnynoM4xg" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt1 p-b-9 seconds">39</span>
-					<span class="s1-txt1">Detik</span>
-				</div>
-			</div>
-			<center><a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn btn-outline-primary rounded-pill">Tutorial</a></center>
-			<div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" width="500" height="600" src="https://www.youtube.com/embed/e9MnynoM4xg" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 			</div>
 		</div>
-	</div>
+	</header>
 	
 
 
@@ -93,7 +75,7 @@
 	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
 	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
+	<!-- <script>
 		$('.cd100').countdown100({
 			/*Set Endtime here*/
 			/*Endtime must be > current time*/
@@ -107,7 +89,8 @@
 			// ex:  timeZone: "America/New_York"
 			// go to " http://momentjs.com/timezone/ " to get timezone
 		});
-	</script>
+	</script> -->
+	<script src="js/main1.js"></script>
 	<script type="text/javascript">
 		$("#prospects_form").submit(function(e) {
     		e.preventDefault();

@@ -117,7 +117,7 @@ input.input100 {
   content: attr(data-validate);
   position: absolute;
   max-width: 70%;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   border: 1px solid #c80000;
   border-radius: 2px;
   padding: 4px 25px 4px 10px;
@@ -1867,7 +1867,7 @@ hr {
 
 .accordion-content {
   padding: 16px;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
 }
 
 .accordion-gap .accordion-item:not(:last-child) {
@@ -2889,7 +2889,7 @@ hr {
   display: inline-block;
   margin: 15px;
   padding: 60px 20px 80px 20px;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   background-image: url(../img/pricing_pattern_grayscale.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -3363,3 +3363,144 @@ hr {
     padding: 20px 0 0 40px;
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+header:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: rgba(34, 34, 34, 0.5);
+}
+header .content {
+  position: relative;
+  z-index: 1;
+}
+header .content h1 {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  font-weight: 900;
+}
+header .content h1 span {
+  font-weight: 400;
+}
+@media screen and (min-width: 480px) {
+  header .content h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .content h1 {
+    font-size: 42px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .content h1 {
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .content h1 {
+    font-size: 72px;
+  }
+}
+header .content h2 {
+  color: rgb(0, 0, 0);
+  font-size: 42px;
+  font-weight: 900;
+  margin: 30px 0px;
+}
+@media screen and (min-width: 480px) {
+  header .content h2 {
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .content h2 {
+    font-size: 72px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .content h2 {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .content h2 {
+    font-size: 128px;
+  }
+}
+header .content .countdown {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  font-weight: 400;
+}
+@media screen and (min-width: 480px) {
+  header .content .countdown {
+    font-size: 42px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .content .countdown {
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .content .countdown {
+    font-size: 72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .content .countdown {
+    font-size: 88px;
+  }
+}
+
+.countdown {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  font-weight: 400;
+
+  @include breakpoint(480px) {
+    font-size: 42px;
+  }
+
+  @include breakpoint(768px) {
+    font-size: 56px;
+  }
+
+  @include breakpoint(1024px) {
+    font-size: 72px;
+  }
+
+  @include breakpoint(1280px) {
+    font-size: 88px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
+
